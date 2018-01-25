@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
+        var inputStr = 'amazing';
 
+        capEveryOtherLetter(inputStr);
+
+        function capEveryOtherLetter(givenStr) {
+            var outputStr = '';
+            for(var i = 0; i<givenStr.length; i++) {
+                if (i % 2 !== 0) {
+                    outputStr += givenStr[i].toUpperCase();
+                } else {
+                    outputStr += givenStr[i];
+                }
+            }
+            console.log(outputStr);
+            return outputStr;
+        }
     </script>
 </head>
 <body>
