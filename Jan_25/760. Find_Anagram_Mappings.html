@@ -13,8 +13,11 @@
         function findAnagram(arr1, arr2) {
             var outputArr =[];
             for(var i=0; i<arr1.length; i++){
-
+                var index = arr2.indexOf(arr1[i]);
+                outputArr.push(index);
             }
+            console.log(outputArr);
+            return outputArr;
         }
 
     </script>
