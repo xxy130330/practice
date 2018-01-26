@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+
+        var a = [12, 28, 46, 32, 50];
+        var b = [50, 12, 32, 46, 28];
+
+        findAnagram(a, b);
+
+        function findAnagram(arr1, arr2) {
+            var outputArr =[];
+            for(var i=0; i<arr1.length; i++){
+                var index = arr2.indexOf(arr1[i]);
+                outputArr.push(index);
+            }
+            console.log(outputArr);
+            return outputArr;
+        }
+
+    </script>
 </head>
 <body>
 
