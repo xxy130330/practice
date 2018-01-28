@@ -4,8 +4,8 @@
 /************************* header *****************/
 
 #header{
-    width:100vw;
-    height:10vh;
+    width:1000px;
+    height:72px;
     background-color: #fffabe;
 }
 
@@ -26,7 +26,7 @@
     justify-content: space-around;
     margin-top: 3%;
     color: #515151;
-    font-size: 1.5vw;
+    font-size: 16px;
 }
 
 #menu :hover{
@@ -35,13 +35,13 @@
 
 /************************* body_welcomeImage ****************************/
 
-#body{
-    height:80vh;
-}
+/*#body{*/
+    /*height:80vh;*/
+/*}*/
 
 #welcomeImage{
-    width:100%;
-    height:35%;
+    width:1000px;
+    height:400px;
     border: 1px solid red;
 }
 
@@ -50,7 +50,6 @@
 #body > .contentContainer{
     display: flex;
     color: #6a6969;
-    height: 55%;
     width: 100%;
 }
 
@@ -63,33 +62,58 @@
     width: 80%;
 }
 
+#content > h3{
+    font-size: 20px;
+}
+
+#content > p{
+    font-size: 14px;
+}
 /************************* body_boxes ****************************/
 
 #boxes{
     display: flex;
-    height: 10%;
-}
-
-
-.sevenBoxes{
-    width:10%;
-    height: 100%;
-}
-
-.upper{
-    height:85%;
+    height: 126px;
     width:100%;
+}
+
+
+.sevenBoxes :nth-child(even){
+    width:126px;
+    height: 140px;
     background-color: #fffabe;
 }
 
-.lower{
-    height:15%;
+.sevenBoxes :nth-child(odd){
+    width:126px;
+    height: 107px;
+    background-color: #fffabe;
+}
+
+/*.upper {*/
+    /*height:107px;*/
+    /*width:100%;*/
+    /*background-color: #fffabe;*/
+/*}*/
+
+/*.upper :nth-child(odd){*/
+    /*height:100%;*/
+    /*width:100%;*/
+    /*background-color: #fffabe;*/
+/*}*/
+
+.sevenBoxes :nth-child(odd) > .lower{
+    height:33px;
     width:100%;
 }
 
+#1 > .lower{
+    background-color: #824603;
+}
 
 /************************* body_boxes ****************************/
 
 #footer{
-    height:10vh;
+    height:80px;
+    width:1000px;
 }
