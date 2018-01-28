@@ -1,9 +1,11 @@
-
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
 /************************* header *****************/
 
 #header{
     width:100vw;
-    height:15vh;
+    height:10vh;
     background-color: #fffabe;
 }
 
@@ -22,8 +24,7 @@
     display: flex;
     align-items: row;
     justify-content: space-around;
-    margin-top: 7%;
-    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 3%;
     color: #515151;
     font-size: 1.5vw;
 }
@@ -34,9 +35,61 @@
 
 /************************* body_welcomeImage ****************************/
 
-#welcomeImage{
-    width:100vw;
-    height:35vh;
-    border: 1px solid red;
+#body{
+    height:80vh;
+}
 
+#welcomeImage{
+    width:100%;
+    height:35%;
+    border: 1px solid red;
+}
+
+/************************* body_imgLeft & contentRight ****************************/
+
+#body > .contentContainer{
+    display: flex;
+    color: #6a6969;
+    height: 55%;
+    width: 100%;
+}
+
+#marcaronImg{
+    border:1px solid black;
+    width: 20%;
+}
+
+#content{
+    width: 80%;
+}
+
+/************************* body_boxes ****************************/
+
+#boxes{
+    display: flex;
+    height: 10%;
+}
+
+
+.sevenBoxes{
+    width:10%;
+    height: 100%;
+}
+
+.upper{
+    height:85%;
+    width:100%;
+    background-color: #fffabe;
+}
+
+.lower{
+    height:15%;
+    width:100%;
+}
+
+
+/************************* body_boxes ****************************/
+
+#footer{
+    height:10vh;
 }
