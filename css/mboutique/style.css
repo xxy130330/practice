@@ -1,0 +1,165 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+/************************* header *****************/
+
+#header{
+    width:1000px;
+    height:72px;
+    background-color: #fffabe;
+}
+
+#logo{
+    height:100%;
+    width:20%;
+    display: inline-block;
+}
+
+#logo > img{
+    margin: 10% 10%;
+}
+
+#menu{
+    /*height: 100%;*/
+    width: 70%;
+    float: right;
+    list-style: none;
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    margin-top: 3%;
+    color: #515151;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#menu :hover{
+    color: #d42551;
+}
+
+/************************* body_welcomeImage ****************************/
+
+/*#body{*/
+    /*height:80vh;*/
+/*}*/
+
+#welcomeImage{
+    width:1000px;
+    height:400px;
+    /*border: 1px solid red;*/
+}
+
+#welcomeImage > img{
+    width: 100%;
+    height: auto;
+}
+/************************* body_imgLeft & contentRight ****************************/
+
+#body > .contentContainer{
+    display: flex;
+    color: #6a6969;
+    width: 1000px;
+}
+
+#marcaronImg{
+    /*border:1px solid black;*/
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+#content{
+    width: 80%;
+}
+
+#content > h3{
+    font-size: 20px;
+}
+
+#content > p{
+    font-size: 14px;
+}
+/************************* body_boxes ****************************/
+
+#boxes{
+    display: flex;
+    justify-content: space-around;
+    height: 140px;
+    width:1000px;
+}
+
+#boxes > .sevenBoxes{
+    width:126px;
+    height: 100%;
+}
+
+.upper {
+    height:107px;
+    width:100%;
+    background-color: #fffabe;
+}
+
+.lower {
+    height:33px;
+    width:100%;
+    background-color: #fffabe;
+    color: #6a6969;
+    padding: 5%;
+}
+
+.lower.first {
+    background-color: #824603;
+    color: white;
+}
+
+.lower.third {
+    background-color: #df5277;
+    color: white;
+}
+
+.lower.fifth {
+    background-color: #a2304e;
+    color: white;
+}
+
+.lower.seventh {
+    background-color: #c39005;
+    color: white;
+}
+
+.sevenBoxes > .upper{
+    color: #6a6969;
+    font-size: 14px;
+}
+
+.sevenBoxes > .upper > p{
+    padding:10%;
+}
+
+.sevenBoxes > .upper > div > p{
+    font-size: 12px;
+    display: inline-block;
+    margin-left:10%;
+}
+
+.sevenBoxes > .upper > div > img{
+    float: right;
+    margin-right:10%;
+}
+
+.sevenBoxes > .lower > p{
+    display: inline-block;
+    padding-left: 5%;
+    font-size: 12px;
+}
+
+.sevenBoxes > .lower > img{
+    float: right;
+    padding-right: 5%;
+}
+    /************************* body_boxes ****************************/
+
+#footer{
+    height:80px;
+    width:1000px;
+}
