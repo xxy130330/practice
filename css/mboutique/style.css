@@ -88,35 +88,59 @@
     width:100%;
 }
 
-#boxes :nth-child(even){
+#boxes > .sevenBoxes{
     width:126px;
     height: 100%;
+}
+
+.upper {
+    height:107px;
+    width:100%;
     background-color: #fffabe;
 }
 
-#boxes :nth-child(odd){
-    width:126px;
-    height: 107px;
+.lower {
+    height:33px;
+    width:100%;
     background-color: #fffabe;
 }
 
-/*.upper {*/
-    /*height:107px;*/
-    /*width:100%;*/
-    /*background-color: #fffabe;*/
-/*}*/
+.lower.first {
+    background-color: #824603;
+}
 
-/*.upper :nth-child(odd){*/
-    /*height:100%;*/
-    /*width:100%;*/
-    /*background-color: #fffabe;*/
-/*}*/
+.lower.third {
+    background-color: #df5277;
+}
 
+.lower.fifth {
+    background-color: #a2304e;
+}
 
+.lower.seventh {
+    background-color: #c39005;
+}
 
+.sevenBoxes > .upper{
+    color: #6a6969;
+    font-size: 14px;
+}
 
+.sevenBoxes > .upper > p{
+    padding:10%;
+}
 
-/************************* body_boxes ****************************/
+.sevenBoxes > .upper > div > p{
+    font-size: 12px;
+    display: inline-block;
+    margin-left:10%;
+}
+
+.sevenBoxes > .upper > div > img{
+    float: right;
+    margin-right:10%;
+}
+    /************************* body_boxes ****************************/
 
 #footer{
     height:80px;
