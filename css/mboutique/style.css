@@ -85,7 +85,7 @@
     display: flex;
     justify-content: space-around;
     height: 140px;
-    width:100%;
+    width:1000px;
 }
 
 #boxes > .sevenBoxes{
@@ -103,22 +103,28 @@
     height:33px;
     width:100%;
     background-color: #fffabe;
+    color: #6a6969;
+    padding: 5%;
 }
 
 .lower.first {
     background-color: #824603;
+    color: white;
 }
 
 .lower.third {
     background-color: #df5277;
+    color: white;
 }
 
 .lower.fifth {
     background-color: #a2304e;
+    color: white;
 }
 
 .lower.seventh {
     background-color: #c39005;
+    color: white;
 }
 
 .sevenBoxes > .upper{
@@ -139,6 +145,17 @@
 .sevenBoxes > .upper > div > img{
     float: right;
     margin-right:10%;
+}
+
+.sevenBoxes > .lower > p{
+    display: inline-block;
+    padding-left: 5%;
+    font-size: 12px;
+}
+
+.sevenBoxes > .lower > img{
+    float: right;
+    padding-right: 5%;
 }
     /************************* body_boxes ****************************/
 
