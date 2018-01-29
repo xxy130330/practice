@@ -162,4 +162,18 @@
 #footer{
     height:80px;
     width:1000px;
+    background-color: #df5277;
+    color: white;
 }
+
+ul.firstLine{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 0 0 0;
+}
+
+#footer > p{
+    text-align: center;
+}
+
