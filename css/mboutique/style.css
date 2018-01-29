@@ -59,6 +59,7 @@
     display: flex;
     color: #6a6969;
     width: 1000px;
+    margin: 5% 0;
 }
 
 #marcaronImg{
@@ -86,6 +87,7 @@
     justify-content: space-around;
     height: 140px;
     width:1000px;
+    margin:5% 0;
 }
 
 #boxes > .sevenBoxes{
