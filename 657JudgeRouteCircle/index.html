@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var givenStr = 'UD';
+        judgeCirce(givenStr);
+
+
+        function judgeCirce(inputStr) {
+            var position = [0,0];
+            var move = {
+                R:{
+                    index:0,
+                    dir:1
+                },
+                L:{
+                    index:0,
+                    dir:-1
+                },
+                U:{
+                    index:1,
+                    dir:1
+                },
+                D:{
+                    index:1,
+                    dir:-1
+                }
+            };
+            for(var i=0; i<inputStr.length; i++){
+                position[move[inputStr[i]]['index']] += move[inputStr[i]]['dir'];
+            }
+            if(position[0] ===0 && position[1] ===0){
+                console.log(true);
+                return true;
+            }else{
+                console.log(false);
+                return false;
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
