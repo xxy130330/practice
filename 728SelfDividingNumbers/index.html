@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+    <script>
+        var min = 1;
+        var max = 22;
+        selfDividingNum(min, max);
+
+        function selfDividingNum(min, max) {
+            var output = [];
+            for(var j=min; j<= max; j++) {
+                var trueFlag = true;
+                var newStr = j.toString();
+                for (var i = 0; i < newStr.length; i++) {
+                    if (newStr % newStr[i] === 0) {
+                        continue;
+                    }else{
+                        trueFlag= false;
+                    }
+                }
+                if(trueFlag){
+                    output.push(parseInt(newStr));
+                }
+
+            }
+            console.log(output);
+            return output;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
