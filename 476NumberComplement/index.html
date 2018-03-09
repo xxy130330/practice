@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+        var input = 5;
+        numberComplement(input);
+
+        function numberComplement(givenInput) {
+            if(givenInput<0){
+                return false;
+            }
+            var binaryNum = givenInput.toString(2);
+            var output = '';
+            for(var i =0; i<binaryNum.length; i++){
+                output += binaryNum[i] === '0' ? '1' : '0';
+            }
+            console.log(parseInt(output, 2));
+            return parseInt(output, 2);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

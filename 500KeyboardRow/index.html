@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+        var givenWords = ["Hello", "Alaska", "Dad", "Peace"];
+        findWords(givenWords);
+
+        function findWords(words) {
+            var row = [
+                ['q','w','e','r','t','y','u','i','o','p'],
+                ['a','s','d','f','g','h','j','k','l'],
+                ['z','x','c','v','b','n','m']
+            ];
+            var output = [];
+            var flag = 0;
+            for(var wordArr = 0; wordArr < words.length; wordArr++){
+                var temp = words[wordArr];
+                var lowerCase = words[wordArr].toLowerCase();
+                for(var rowIndex = 0; rowIndex<row.length; rowIndex++) {
+                    for(var letter =0; letter<lowerCase.length; letter++){
+                        if(row[rowIndex].indexOf(lowerCase[letter]) !== -1) {
+                            flag++;
+                        }
+                    }
+                    if(flag === words[wordArr].length){
+                        output.push(temp);
+                    }
+                    flag = 0;
+                }
+            }
+            console.log(output);
+            return output;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
