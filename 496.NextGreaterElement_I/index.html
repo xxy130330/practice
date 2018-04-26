@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var nums1 = [4,1,2];
+
+        var nums2 = [1,3,4,2];
+
+        nextGreaterElement(nums1, nums2);
+
+        function nextGreaterElement(inputNums1, inputNums2) {
+            var output = [];
+            for (var i = 0; i < inputNums1.length; i++) {
+                var flag = false;
+                var index = inputNums2.indexOf(inputNums1[i]);
+                if (index !== -1) {
+                    if (inputNums2[index + 1] > inputNums1[i]) {
+                        output.push(inputNums2[index + 1]);
+                    } else {
+                        if (index === inputNums2.length - 1) {
+                            output.push(-1);
+                        } else {
+                            for (var j = index + 1; j < inputNums2.length; j++) {
+                                if(!flag) {
+                                    if (inputNums2[j] > inputNums1[i]) {
+                                        output.push(inputNums2[j]);
+                                        flag = true;
+                                    }
+                                }
+                                if(j === inputNums2.length-1 && !flag && inputNums2[j] < inputNums1[i]){
+                                    output.push(-1);
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+
+                console.log(output);
+                return output;
+            }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
