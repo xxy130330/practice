@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+    <script>
+        var givenMatrix = [[1,2],[2,2]];
+
+        isToeplitzMatrix(givenMatrix);
+
+        function isToeplitzMatrix(matrix) {
+            var flag = true;
+            for(var outer=1; outer<matrix.length; outer++) {
+                for (var inner = 1; inner < matrix[outer].length; inner++) {
+                    if (outer !== 0 || inner !== 0) {
+                        if(matrix[outer-1][inner-1] === matrix[outer][inner]){
+                            continue;
+                        }else{
+                            flag = false;
+                        }
+                    }else{
+                        continue;
+                    }
+                }
+            }
+            if(flag === true){
+                console.log(true);
+                return true;
+            }else{
+                console.log(false);
+                return false;
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

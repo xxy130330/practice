@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var givenGrid = [[0,1,0,0],
+            [1,1,1,0],
+            [0,1,0,0],
+            [1,1,0,0]];
+
+        islandPerimeter(givenGrid);
+
+        function islandPerimeter(grid){
+            var parameter = 0;
+            for(var outer = 0; outer<grid.length; outer++){
+                for(var inner = 0; inner<grid[outer].length; inner++){
+                    if(grid[outer][inner] === 1){
+                        parameter = parameter + 4;
+                        if(outer<grid.length-1 && grid[outer+1][inner] === 1){
+                            parameter--;
+                        }
+                        if(outer>0 && grid[outer-1][inner] === 1){
+                            parameter--;
+                        }
+                        if(inner<grid[outer].length-1 && grid[outer][inner+1] === 1){
+                            parameter--;
+                        }
+                        if(inner>0 && grid[outer][inner-1] === 1){
+                            parameter--;
+                        }
+                    }
+                }
+            }
+            console.log(parameter);
+            return parameter;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

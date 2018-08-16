@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+    <script>
+        var inputArr = [1,4,3,2];
+        arrayPartition(inputArr);
+
+        function arrayPartition(givenArr) {
+            var temp;
+            var total=0;
+            for(var i=0;i<givenArr.length;i++){
+                for(var j=i+1; j<givenArr.length; j++){
+                    if(givenArr[i] > givenArr[j]){
+                        temp = givenArr[i];
+                        givenArr[i] = givenArr[j];
+                        givenArr[j] = temp;
+                    }
+                }
+            }
+
+//            var newArr = givenArr.sort();
+//            for(var k=0; k<newArr.length;k=k+2){
+//                if(newArr[k]<=newArr[k+1]){
+//                    total += newArr[k];
+//                }
+//           }
+            for(var k=0; k<givenArr.length;k=k+2){
+                if(givenArr[k]<=givenArr[k+1]){
+                    total += givenArr[k];
+                }
+            }
+            console.log(total);
+            return total;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

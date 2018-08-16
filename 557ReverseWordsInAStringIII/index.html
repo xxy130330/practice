@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var inputStr = 'Let\'s take LeetCode contest';
+        reverseWords(inputStr);
+
+        function reverseWords(givenStr) {
+            var begin = null;
+            var end = null;
+            var output = '';
+            for(var i=0; i<givenStr.length; i++){
+                if (i===0 || (i !==0 && givenStr[i-1] === ' ')){
+                    begin = i;
+                }
+                if(givenStr[i+1] === ' ' || i === givenStr.length-1){
+                    end = i;
+                }
+                if(begin !== null && end !== null){
+                    for(var inner = end; inner >= begin; inner--){
+                        output += givenStr[inner];
+                    }
+                    if(end !== givenStr.length -1) {
+                        output += ' ';
+                    }
+                    begin = null;
+                    end = null;
+                }
+            }
+            output.slice(1, givenStr.length-1);
+            console.log(output);
+            return output;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

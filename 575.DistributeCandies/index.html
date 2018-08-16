@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var givenCandies = [1,1,2,2,3,3];
+        distributeCandies(givenCandies);
+
+        function distributeCandies(candies) {
+            var lengthOfInput = candies.length;
+            var numOfCandies = [];
+            for(var i =0; i<candies.length; i++){
+                if(numOfCandies.length < (lengthOfInput/2) ){
+                    if(numOfCandies.indexOf(candies[i]) === -1){
+                        numOfCandies.push(candies[i]);
+                    }
+                }
+            }
+            console.log(numOfCandies.length);
+            return numOfCandies.length;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
